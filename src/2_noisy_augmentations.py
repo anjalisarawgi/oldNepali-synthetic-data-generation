@@ -13,6 +13,7 @@ np.bool = bool
 
 input_dir = "data/oldNepaliSynth_105k"
 output_dir = "data/oldNepaliSynth_105k_vnoisy/images"
+os.makedirs(output_dir, exist_ok=True)
 
 # thickness randomization
 # we do erosion and dilation here - 70 percent dilation - 30 percent erosion

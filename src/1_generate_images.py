@@ -18,7 +18,7 @@ DISTORT_PROP = (0.05, 0.2)
 ANGLE = (-15, 15)
 SCALE = (0.9, 1.1)
 FONT_SIZE = (28, 36) 
-# padding = 20
+# PADDING = 20
 
 # note: make sure to create a fonts/ directory with .ttf font files before running this script. You may downlaod these from Google Fonts or other sources.
 font_paths = [os.path.join("fonts", f) for f in os.listdir("fonts") if f.endswith('.ttf')] 
