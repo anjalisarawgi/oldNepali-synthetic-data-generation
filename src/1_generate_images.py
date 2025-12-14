@@ -24,7 +24,7 @@ FONT_SIZE = (28, 36)
 font_paths = [os.path.join("fonts", f) for f in os.listdir("fonts") if f.endswith('.ttf')] 
 
 # call corpus:
-with open("corpus_105k.txt", 'r', encoding='utf-8') as f:
+with open("data/corpus_105k.txt", 'r', encoding='utf-8') as f:
     lines = [ln.strip() for ln in f if ln.strip()]
 
 
