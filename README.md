@@ -22,3 +22,6 @@ python src/2_noisy_augmentations.py
 ```
 
 Once these are completed, you ca view the images at data/oldNepaliSynthetic_105k_vnoisy. The labels.json is also saved with image paths and text labels, which can be further used for model training. 
+
+# Dataset
+The generated dataset can also be downloaded at: [dataset-link](https://drive.google.com/drive/folders/1Iq40Aejr5B1t022q8r7RwiFbwxAdxlHL?usp=sharing)
