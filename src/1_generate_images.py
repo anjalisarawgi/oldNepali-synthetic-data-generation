@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 #########################################
 
 output_dir = "data/oldNepaliSynth_105k"
+os.makedirs(output_dir, exist_ok=True)
 
 # to randomize the distortions we make ranges
 DISTORT_PROP = (0.05, 0.2)
