@@ -11,7 +11,7 @@ import numpy as np
 np.bool = bool 
 
 
-INPUT_DIR = "data/oldNepaliSynth_105k"
+input_dir = "data/oldNepaliSynth_105k"
 output_dir = "data/oldNepaliSynth_105k_vnoisy/images"
 
 # thickness randomization

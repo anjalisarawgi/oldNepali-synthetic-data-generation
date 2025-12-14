@@ -20,8 +20,8 @@ FONT_SIZE = (28, 36)
 # padding = 20
 
 # note: make sure to create a fonts/ directory with .ttf font files before running this script. You may downlaod these from Google Fonts or other sources.
-# call fonts:
 font_paths = [os.path.join("fonts", f) for f in os.listdir("fonts") if f.endswith('.ttf')] 
+
 # call corpus:
 with open("corpus_105k.txt", 'r', encoding='utf-8') as f:
     lines = [ln.strip() for ln in f if ln.strip()]
