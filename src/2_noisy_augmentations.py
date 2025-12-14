@@ -32,24 +32,6 @@ os.makedirs(output_dir, exist_ok=True)
 #     return image
 
 
-# def get_augmenter():
-#     return iaa.Sequential([
-#         iaa.Sometimes(0.5, iaa.PiecewiseAffine(scale=(0.003, 0.01), mode="reflect")),
-#         iaa.Sometimes(0.4, iaa.ElasticTransformation(alpha=(1, 2), sigma=(0.5, 0.8), mode="reflect")),
-#         iaa.Sometimes(0.4, iaa.AdditiveGaussianNoise(scale=(5, 10))),  # small ink shake
-#         iaa.Sometimes(0.3, iaa.MotionBlur(k=3)),                      # just enough blur
-#         iaa.Sometimes(0.3, iaa.Dropout(p=(0.01, 0.02))),                # slight dropout
-#         iaa.Sometimes(0.3, iaa.Affine(
-#             shear=(-1, 1),
-#             rotate=(-1.5, 1.5),
-#             scale=(0.97, 1.03),
-#             mode="reflect"
-#         )),
-#         iaa.Sometimes(0.2, iaa.GaussianBlur(sigma=(0.3, 0.6)))
-#     ])
-
-
-
 def get_augmenter():
     return iaa.Sequential([
         iaa.Sometimes(0.6, iaa.PiecewiseAffine(scale=(0.005, 0.015))),
